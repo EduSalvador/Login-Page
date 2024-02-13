@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: #FFFFFD;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-login {
+    background-color: #FFFFFD;
+    -webkit-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 30px 30px 30px;
+    margin: 20px;
+    background-image: url(../image/background-image.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.border-top {
+    width: 100%;
+    height: 1.3px;
+    margin: 5px 2px;
+    background-color: rgb(117, 96, 236);
+}
+
+.title-login-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-login-card > h1 {
+    font-size: 1.5rem;
+}
+
+.title-login-card > img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.btn-login-platform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-login-platform button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: transparent;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 1.5px solid #9b9b9b;
+    flex: 1; /* Isso permite que os botões cresçam e ocupem o espaço disponível */
+    transition: 0.3s ease;
+    margin: 3px; /* Mantenha um pequeno espaço entre os botões */
+}
+
+.btn-login-platform > button > img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.btn-login-platform > button:hover {
+    color: rgb(117, 96, 236);
+}
+
+.separator {
+    display: flex; /* Usa flexbox para alinhar o texto e as linhas */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    color: #666; /* Cor do texto */
+    margin-top: 12px;
+    font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+.separator::before,
+.separator::after {
+    content: ''; /* Conteúdo vazio para os pseudo-elementos */
+    flex: 1; /* Faz com que as linhas ocupem o espaço disponível */
+    border-bottom: 1px solid #ccc; /* Estilo da linha */
+    margin: 0 2px; /* Espaçamento entre o texto e as linhas */
+}
+
+.separator p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    padding: 0 5px; /* Espaçamento em volta do texto para evitar que as linhas toquem o texto */
+    background: #fff; /* Fundo branco para sobrepor a linha */
+    /* Adicione 'position: relative' e 'z-index' se a linha não estiver atrás do texto */
+    position: relative;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+.inputs-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.input {
+    margin: 8px 0;
+}
+
+.input > p {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.input > p {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.input input {
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #9b9b9b;
+    margin-top: 2px;
+    transition: 0.3s ease;
+    padding-left: 10px;
+}
+
+.input input::placeholder {
+    font-size: 0.9rem;
+}
+
+.input input:focus {
+    border-color: rgb(117, 96, 236); /* Muda a cor da borda para azul, por exemplo */
+    box-shadow: 0 0 8px rgba(117, 96, 236, 0.5); /* Adiciona um sombreado para destacar */
+    outline: none;
+}
+s
+.input input{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-login button {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(117, 96, 236);
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFD;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px 0;
+}
+
+.btn-login button:hover {
+    background-color: rgb(107, 89, 212);
+}
+
+.btn-create-or-reset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: rgb(117, 96, 236);
+}
+
+.btn-create-or-reset > a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+.btn-create-or-reset > a:hover {
+    color: rgb(107, 89, 212);
+}
